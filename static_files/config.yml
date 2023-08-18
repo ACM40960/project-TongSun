@@ -1,0 +1,5 @@
+mean_odd: 0.95
+sigma: 0.02
+bet_num: 10000
+simulation_bet_num: 10000000
+

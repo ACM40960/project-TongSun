@@ -1,0 +1,19 @@
+The goal is to set up a betting website that updates its odds calculation each year based on
+the previous year’s league results. The website sets the odds such that the house always makes money.
+For example, if Team X’s win odds are 0.86 for a match, then the house will set the bet ratio to be
+something like 1.1, i.e., less than 1/0.86 but not so small that it will put people off.
+E.g., 1.1 is good because 1.1*0.86= 0.95 meaning that over 1000s of bets, the house will win 5 cents
+from each dollar/euro.
+Your job is to come up with marginal winning odds for each match such that the house roughly will make
+5 cents/dollar per bet per match. Given that there are hundreds of matches in a season, and let’s say,
+e.g., that for each match 10e4 bets are placed, your simulation should run over approximate 10e7 bets
+overall per season. At the end of the season, you can provide a “house wins” summary sheet showing how
+much money your betting algorithm brought in.
+You can then update your algorithm based on the previous season’s actual results and have it run for
+the next season etc. You can expand on this some more by improving your model from using a constant
+0.95 (5cents/dollar) goal to something that is a normal (Gaussian) distribution with peak at 0.95 with
+104 bets and ±σ at say roughly 0.93 and 0.97 (±2σ at 0.91 and 0.99) with the number of bets obtained
+from the Gaussian distribution: 104e− 12 (x−0.95)2/σ2 where σ = 0.02. Thus your company can try to make
+more cents on the dollar, but might find this less profitable as fewer people would place bets far from
+x = 0.95 for various reasons. There are various ways to improve/enhance/enrich this project so feel free
+to be as creative as you’d like as long as it is reasonable, and prefereably, has precedent in the literature.
