@@ -26,12 +26,15 @@ According to previous years' results of matches, train models based on the datas
  **Used columns**: HomeTeam, AwayTeam, FTHG, FTAG, FTR, HTHG, HTAG, HS, AS, HST, AST, HY, AY, HR, AR.\
  Training data: 75%,  test data: 25%
  
+ 
 ### Tools
  - ![Python](https://img.shields.io/badge/python-v3.11+-blue.svg)
  - ![IntelliJIDEA](https://img.shields.io/badge/IntelliJIDEA-v2018.2.5-blue.svg)
-
+ 
+ 
 ### Process diagram
  ![img](./static_files/images/processing_chart.png)
+ 
  
 ### How to use
 #### Installation
